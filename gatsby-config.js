@@ -51,4 +51,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
+  pathPrefix: "/CSES"
 };
