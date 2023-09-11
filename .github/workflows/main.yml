@@ -15,3 +15,5 @@ jobs:
           access-token: ${{ secrets.BUILD_TRIGGER }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+      - run: |
+          npm install --legacy-peer-deps
