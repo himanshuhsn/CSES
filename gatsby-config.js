@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `Rocket Docs`,
     siteTitleShort: `Rocket Docs`,
     siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.app`,
+    siteUrl: `https://himanshuhsn.github.io/CSES`,
     siteAuthor: `@jpedroschmitz`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
