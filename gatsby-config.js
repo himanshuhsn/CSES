@@ -9,7 +9,7 @@ module.exports = {
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
-    basePath: `/CSES`,
+    basePath: `/`,
   },
   plugins: [
     {
