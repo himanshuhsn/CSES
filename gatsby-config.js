@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteTitle: `CSES Solutions`,
+    defaultTitle: `CSES Solutions`,
+    siteTitleShort: `CSES Solutions`,
+    siteDescription: `Unlocking competitive programming with clear CSES solutions and intuitive problem-solving insights.`,
     siteUrl: `https://himanshuhsn.github.io/CSES`,
-    siteAuthor: `@jpedroschmitz`,
+    siteAuthor: `@himanshuhsn`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
