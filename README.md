@@ -3,20 +3,19 @@
 </p>
 
 <h2 align="center">
-  Gatsby Starter: Rocket Docs
+  CSES Problems : Let's Explore
 </h2>
 
 <p align="center">
-  Out of the box Gatsby Starter for creating documentation websites easily and quickly. With support for MDX, code highlight, Analytics, SEO and more 🔥 Using the theme: <a href="https://github.com/jpedroschmitz/rocketdocs/tree/main/%40rocketseat/gatsby-theme-docs">@rocketseat/gatsby-theme-docs</a>
+  Welcome to CSES Solutions with Intuition, your key to conquering algorithmic problem solving. Here, you'll find easy-to-understand solutions and intuitive insights for CSES problems. Join, contribute to us on GitHub, and let's supercharge our algorithmic skills 🔥 Using the theme: <a href="https://github.com/jpedroschmitz/rocketdocs/tree/main/%40rocketseat/gatsby-theme-docs">@rocketseat/gatsby-theme-docs.</a> Huge Thanks to the team for the theme!!
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/PRs-welcome-%238257E6.svg" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%238257E6">
-
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz.svg?label=Follow%20@jpedroschmitz" alt="Follow @jpedroschmitz" />
+  <a href="https://www.linkedin.com/in/himanshuhsn/">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
+    alt="Linkedin @himanshuhsn" />
   </a>
 </p>
 
@@ -35,18 +34,19 @@
 
 ## ⚡️ Getting started
 
-1. Create the website.
+1. Fork and Clone.
 
    ```sh
-   npx gatsby new rocketdocs https://github.com/jpedroschmitz/gatsby-starter-rocketdocs
+   git clone https://github.com/<your-username>/CSES.git
+   cd CSES
    ```
 
 2. Start developing.
 
-   ```sh
-   cd rocketdocs
-   gatsby develop
-   ```
+  ```sh
+   npm i --legacy-peer-deps (node v18^ is required)
+   npm run start
+  ```
 
 3. Are you ready for launch?
 
@@ -54,8 +54,8 @@
 
 ## 📄 Docs
 
-Looking for docs? Check our live demo and documentation [website](https://rocketdocs.netlify.app).
+Looking for docs? Check the live demo and documentation [website](https://rocketdocs.netlify.app).
 
 ---
 
-Made with 💜 by João Pedro
+Made with 💜 by Himanshu
