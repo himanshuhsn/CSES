@@ -1,0 +1,107 @@
+---
+title: Tree Matching
+description: https://cses.fi/problemset/task/1130
+---
+
+## Problem
+
+[Tree Matching](https://cses.fi/problemset/task/1130)
+
+> Please Read the problem statement on the [link](https://cses.fi/problemset/task/1130) provided and try to solve the problem before
+moving to the solution part.
+
+## Learning
+
+- DP on tree
+
+## Code (DP)
+
+```cpp lineNumbers=true
+#include<bits/stdc++.h>
+using namespace std;
+ 
+const int maxN = 2e5+5;
+int n, u, v;
+vector<int> adj[maxN];
+int dp[maxN][2];
+ 
+void dfs(int s = 1, int p = 0) {
+    dp[s][0] = dp[s][1] = 0;
+ 
+    for(auto u: adj[s]) {
+        if(u == p) continue;
+        dfs(u, s);
+        dp[s][0] += max(dp[u][0], dp[u][1]);
+    }
+ 
+    for(auto u: adj[s]) {
+        if(u == p) continue;
+        dp[s][1] = max(dp[s][1], dp[u][0] + 1 + dp[s][0] - max(dp[u][0], dp[u][1]));
+    }
+}
+ 
+void solve() {
+    cin >> n;
+    for(int i=2; i<=n; i++) {
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+ 
+    dfs();
+    cout << max(dp[1][0], dp[1][1]) << "\n";
+}
+ 
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    solve();
+    return 0;
+}
+```
+
+## Code (Greedy)
+
+```cpp lineNumbers=true
+#include<bits/stdc++.h>
+using namespace std;
+ 
+const int maxN = 2e5+5;
+int n, u, v;
+vector<int> adj[maxN];
+bool done[maxN];
+int ans = 0;
+
+void dfs(int s, int p) {
+    for(auto u: adj[s]) {
+        if(u == p) continue;
+        dfs(u, s);
+        if(!done[s] && !done[u]) done[s] = done[u] = 1, ans++;
+    }
+}
+
+void solve() {
+    cin >> n;
+    for(int i=2; i<=n; i++) {
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+ 
+    dfs(1, 0);
+    cout << ans << "\n";
+}
+ 
+int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    solve();
+    return 0;
+}
+```
+
+## References
+
+Intuition
+https://www.youtube.com/watch?v=RuNAYVTn9qM
+
+Implementations
+https://usaco.guide/gold/dp-trees?lang=cpp

@@ -11,7 +11,9 @@
 - label: 'Tree Algorithms'
   items:
     - label: 'Subordinates'
-    link: '/tree-algoritms/subordinates'
+    link: '/tree-algorithms/subordinates'
+    - label: 'Tree Matching'
+    link: '/tree-algorithms/tree-matching'
 - label: More
   items:
     - label: FAQ
