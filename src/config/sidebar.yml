@@ -4,10 +4,14 @@
   link: '/'
 - label: 'Getting started'
   link: '/getting-started'
-- label: Dynamic Programming
+- label: 'Dynamic Programming'
   items: 
     - label: 'Elevator Rides'
       link: '/dynamic-programming/elevator-rides'
+- label: 'Tree Algorithms'
+  items:
+    - label: 'Subordinates'
+    link: '/tree-algoritms/subordinates'
 - label: More
   items:
     - label: FAQ

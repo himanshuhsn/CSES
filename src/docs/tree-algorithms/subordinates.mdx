@@ -1,0 +1,59 @@
+---
+title: Subordinates
+description: https://cses.fi/problemset/task/1674/
+---
+
+## Problem
+
+[Subordinates](https://cses.fi/problemset/task/1674/)
+
+> Please Read the problem statement on the [link](https://cses.fi/problemset/task/1674/) provided and try to solve the problem before
+moving to the solution part.
+
+## Learning
+
+- Basic DP on tree
+
+## Code
+
+```cpp lineNumbers=true
+#include<bits/stdc++.h>
+using namespace std;
+ 
+const int maxN = 2e5+5;
+int n, x, cnt[maxN];
+vector<int> adj[maxN];
+ 
+void dfs(int s, int e) {
+    cnt[s] = 1;
+    for(auto u: adj[s]) {
+        if(u == e) continue;
+        dfs(u, s);
+        cnt[s] += cnt[u];
+    }
+}
+ 
+void solve() {
+    cin >> n;
+    for(int i=2; i<=n; i++) {
+        cin >> x;
+        adj[i].push_back(x);
+        adj[x].push_back(i);
+    }
+ 
+    dfs(1, 0);
+    for(int i=1; i<=n; i++) {
+        cout << cnt[i]-1 << " ";
+    }
+}
+ 
+int32_t main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    solve();
+    return 0;
+}
+```
+
+## References
+
+https://usaco.guide/CPH.pdf#page=145
