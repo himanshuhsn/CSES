@@ -11,15 +11,15 @@
 - label: 'Tree Algorithms'
   items:
     - label: 'Subordinates'
-    link: '/tree-algorithms/subordinates'
+      link: '/tree-algorithms/subordinates'
     - label: 'Tree Matching'
-    link: '/tree-algorithms/tree-matching'
+      link: '/tree-algorithms/tree-matching'
     - label: 'Tree Diameter'
-    link: '/tree-algorithms/tree-diameter'
+      link: '/tree-algorithms/tree-diameter'
     -label: 'Tree Distances 1'
-    link: '/tree-algorithms/tree-distances-1'
+      link: '/tree-algorithms/tree-distances-1'
     -label: 'Tree Distances 2'
-    link: '/tree-algorithms/tree-distances-2'
+      link: '/tree-algorithms/tree-distances-2'
 - label: More
   items:
     - label: FAQ
