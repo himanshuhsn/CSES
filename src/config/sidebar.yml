@@ -7,7 +7,7 @@
 - label: Dynamic Programming
   items: 
     - label: 'Elevator Rides'
-      link: '/dynamic-programming/creating-docs'
+      link: '/dynamic-programming/elevator-rides'
 - label: More
   items:
     - label: FAQ
